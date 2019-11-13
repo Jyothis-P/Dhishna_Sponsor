@@ -1,32 +1,64 @@
 <?xml version="1.0" encoding="utf-8"?>
 <LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
-    android:orientation="horizontal" android:layout_width="match_parent"
+    android:orientation="vertical" android:layout_width="match_parent"
     android:layout_height="wrap_content"
     android:layout_margin="8dp"
     android:padding="8dp"
+    android:id="@+id/item_container"
     android:gravity="center_vertical"
     android:background="@drawable/box_only_border_red">
 
-    <TextView
-        android:layout_width="wrap_content"
+    <LinearLayout
+        android:layout_width="match_parent"
         android:layout_height="wrap_content"
-        android:layout_margin="8dp"
-        android:text="Aditya Birla"
-        android:layout_gravity="center_vertical"
-        android:id="@+id/cname_text_view"/>
-    <TextView
-        android:layout_width="wrap_content"
+        android:orientation="horizontal">
+
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_margin="8dp"
+            android:text="Aditya Birla"
+            android:textColor="@android:color/black"
+            android:textSize="16sp"
+            android:layout_weight="0"
+            android:layout_gravity="center_vertical"
+            android:id="@+id/cname_text_view"/>
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_margin="8dp"
+            android:text="Edapally"
+            android:layout_weight="1"
+            android:gravity="center_horizontal"
+            android:layout_gravity="center_vertical"
+            android:id="@+id/locale_text_view"/>
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_weight="0"
+            android:layout_margin="8dp"
+            android:text="Oct 7, 12:00PM"
+            android:layout_gravity="center_vertical"
+            android:id="@+id/time_text_view"/>
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
         android:layout_height="wrap_content"
-        android:layout_margin="8dp"
-        android:text="Edapally"
-        android:layout_gravity="center_vertical"
-        android:id="@+id/locale_text_view"/>
-    <TextView
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:layout_weight="1"
-        android:layout_margin="8dp"
-        android:text="Replied posively might wait sometime befor the next one"
-        android:layout_gravity="center_vertical"
-        android:id="@+id/status_text_view"/>
+        android:layout_gravity="center_horizontal"
+        android:gravity="center_horizontal"
+        android:orientation="horizontal">
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_margin="8dp"
+            android:text="Told us to come back on sunday"
+            android:layout_gravity="center_horizontal"
+            android:id="@+id/status_text_view"/>
+
+    </LinearLayout>
+
+
 </LinearLayout>
